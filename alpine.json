@@ -45,7 +45,7 @@
       "boot_command": [
         "root<enter><wait>",
         "ifconfig eth0 up && udhcpc -i eth0<enter><wait10>",
-        "wget http://{{ .HTTPIP }}:{{ .HTTPPort }}/answers<enter><wait>",
+        "wget http://{{ .HTTPIP }}:{{ .HTTPPort }}/answers -O - | tr -d '\\r' > answers<enter><wait>",
         "setup-alpine -f answers<enter><wait5>",
         "{{user `root_password`}}<enter><wait>",
         "{{user `root_password`}}<enter><wait>",
