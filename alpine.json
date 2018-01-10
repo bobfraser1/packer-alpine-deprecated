@@ -67,7 +67,8 @@
       "hard_drive_interface": "sata",
       "vboxmanage": [
         ["modifyvm", "{{.Name}}", "--memory", "{{user `memory`}}"],
-        ["modifyvm", "{{.Name}}", "--cpus", "{{user `cpus`}}"]
+        ["modifyvm", "{{.Name}}", "--cpus", "{{user `cpus`}}"],
+        ["modifyvm", "{{.Name}}", "--rtcuseutc", "on"]
       ]
     }
   ]
