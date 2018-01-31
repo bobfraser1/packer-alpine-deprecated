@@ -16,7 +16,7 @@
   "provisioners": [
     {
       "type": "shell",
-      "inline":"echo hello"
+      "inline": "echo hello"
     }
   ],
   "builders": [
@@ -40,7 +40,6 @@
       "ssh_password": "{{user `ssh_password`}}",
       "ssh_wait_timeout": "10m",
       "shutdown_command": "echo {{user `ssh_password`}} | sudo -S /sbin/poweroff",
-
       "boot_wait": "30s",
       "boot_command": [
         "root<enter><wait>",
@@ -67,9 +66,24 @@
       ],
       "hard_drive_interface": "sata",
       "vboxmanage": [
-        ["modifyvm", "{{.Name}}", "--memory", "{{user `memory`}}"],
-        ["modifyvm", "{{.Name}}", "--cpus", "{{user `cpus`}}"],
-        ["modifyvm", "{{.Name}}", "--rtcuseutc", "on"]
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--memory",
+          "{{user `memory`}}"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--cpus",
+          "{{user `cpus`}}"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--rtcuseutc",
+          "on"
+        ]
       ]
     }
   ]
