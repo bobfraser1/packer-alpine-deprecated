@@ -6,7 +6,7 @@
     "memory": "1024",
     "disk_size": "10240",
     "iso_local_url": "../../isos/alpine-virt-3.7.0-x86_64.iso",
-    "iso_download_url": "http://dl-cdn.alpinelinux.org/alpine/v3.6/releases/x86_64/alpine-virt-3.7.0-x86_64.iso",
+    "iso_download_url": "http://dl-cdn.alpinelinux.org/alpine/v3.7/releases/x86_64/alpine-virt-3.7.0-x86_64.iso",
     "iso_checksum": "5a4b2588afd32e7024dd61d9558b77b03a4f3189cb4c9fc05e9e944fb780acdd",
     "iso_checksum_type": "sha256",
     "root_password": "packer",
