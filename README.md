@@ -1,5 +1,9 @@
 # packer-alpine
 
+## DEPRECATED
+
+This repo has been deprecated and renamed. The new packer-alpine will use an Apache 2.0 license. This repo is for anyone to use the existing code to date under the MIT license.
+
 Packer template for alpine linux
 
 Build a virtual machine image for [Alpine linux](https://www.alpinelinux.org) using [Packer](https://www.packer.io).
